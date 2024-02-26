@@ -1,0 +1,61 @@
+//-------------------Header
+.헤더-컨테이너{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(24,23,31);
+    padding: 0 4rem;
+    .헤더-로고{
+        color: rgb(16,71,251);
+        font-size: 25px;
+        letter-spacing: 0.1rem;
+        font-weight: bold;
+    }
+    .헤더-메뉴컨테이너{
+        color: white;
+        div{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .헤더-작은메뉴{
+            margin-top: 15px;
+            color: #a2a2a2;
+            font-weight: lighter;
+            gap: 20px;
+            a{
+                color: #a2a2a2;
+                &:hover{
+                    color: white;
+                }
+            }
+        }
+        .헤더-메인메뉴{
+            margin-top: 15px;
+            gap: 50px;
+            h4{
+                padding: 0.5rem 0;
+                display: flex;
+                font-size: 21px;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+                cursor: pointer;
+                border-bottom: 3px solid rgb(24,23,31);
+                svg{
+                    stroke-width: 4;
+                    width: 10px;
+                    height: 10px;
+                    transition: all .3s;
+                }
+                &:hover{
+                    border-bottom: 3px solid #265df4;
+                    color: #265df4;
+                    svg{
+                        transform: rotateZ(180deg);
+                    }
+                }
+            }
+        }
+    }
+}
