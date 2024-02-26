@@ -1,59 +1,144 @@
 //-------------------Header
-.헤더-컨테이너{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(24,23,31);
-    padding: 0 4rem;
-    .헤더-로고{
-        color: rgb(16,71,251);
-        font-size: 25px;
-        letter-spacing: 0.1rem;
-        font-weight: bold;
-    }
-    .헤더-메뉴컨테이너{
-        color: white;
-        div{
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
+.헤더-컨테이너 {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    .헤더 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(24, 23, 31);
+        padding: 0 4rem;
+
+        .헤더-로고 {
+            color: rgb(16, 71, 251);
+            font-size: 25px;
+            letter-spacing: 0.1rem;
+            font-weight: bold;
         }
-        .헤더-작은메뉴{
-            margin-top: 15px;
-            color: #a2a2a2;
-            font-weight: lighter;
-            gap: 20px;
-            a{
+
+        .헤더-메뉴컨테이너 {
+            color: white;
+            div {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+
+            .헤더-작은메뉴 {
+                margin-top: 15px;
                 color: #a2a2a2;
-                &:hover{
-                    color: white;
+                font-weight: lighter;
+                gap: 20px;
+
+                a {
+                    color: #a2a2a2;
+
+                    &:hover {
+                        color: white;
+                    }
                 }
             }
-        }
-        .헤더-메인메뉴{
-            margin-top: 15px;
-            gap: 50px;
-            h4{
-                padding: 0.5rem 0;
-                display: flex;
-                font-size: 21px;
-                justify-content: center;
-                align-items: center;
-                gap: 8px;
-                cursor: pointer;
-                border-bottom: 3px solid rgb(24,23,31);
-                svg{
-                    stroke-width: 4;
-                    width: 10px;
-                    height: 10px;
-                    transition: all .3s;
-                }
-                &:hover{
-                    border-bottom: 3px solid #265df4;
-                    color: #265df4;
-                    svg{
-                        transform: rotateZ(180deg);
+
+            .헤더-메인메뉴 {
+                margin-top: 15px;
+                gap: 50px;
+                position: relative;
+                h4 {
+                    padding: 0.5rem 0;
+                    display: flex;
+                    font-size: 21px;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 8px;
+                    cursor: pointer;
+                    border-bottom: 3px solid rgb(24, 23, 31);
+                    letter-spacing: -0.05rem;
+
+                    svg {
+                        stroke-width: 4;
+                        width: 10px;
+                        height: 10px;
+                        transition: all .3s;
                     }
+
+                    &:hover {
+                        border-bottom: 3px solid #265df4;
+                        color: #265df4;
+                        svg {
+                            transform: rotateZ(180deg);
+                        }
+                    .드롭다운{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        z-index: 1;
+                    }
+                    }
+                    .드롭다운 {
+                        z-index: -999;
+                        width: 900px;
+                        background-color: white;
+                        position: absolute;
+                        right: 0;
+                        top: 40px;
+                        display: none;
+                        transition: .5s;
+                        padding: 2rem;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+//--------------Dropdown
+.드롭다운-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+}
+//--------------Home
+.메인-배경{
+    width: 100%;
+    height: 100dvh;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.7)
+      ),
+      url("https://png.pngtree.com/background/20230613/original/pngtree-digital-technology-background-with-dark-lines-and-lines-picture-image_3386207.jpg");
+      background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0 7rem;
+    .메인-인덱스{
+        color: white;
+        h1{
+            font-size: 48px;
+        }
+        h2{
+            font-size: 21px;
+            width: 600px;
+            margin: 1.5rem 0;
+        }
+        .메인-체크{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            p{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 10px;
+                svg{
+                    stroke-width: 4px;
+                    stroke: #e52662;
+                    width: 20px;
+                    height: 20px;
                 }
             }
         }
