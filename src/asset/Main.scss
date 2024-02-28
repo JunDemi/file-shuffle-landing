@@ -99,6 +99,23 @@
     align-items: center;
     gap: 120px;
 }
+//--------------Scroll Top Button{
+.스크롤-탑-버튼{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    border-radius: 50%;
+    border: none;
+    padding: 3px;
+    background-color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    svg{
+        stroke-width: 3px;
+        stroke: #ffffff9f;
+        width: 2rem;
+        height: 2rem;
+    }
+}
 //--------------Home
 .메인-배경{
     width: 100%;
@@ -113,7 +130,7 @@
     background-attachment: fixed;
     display: flex;
     justify-content: start;
-    align-items: center;
+    align-items: end;
     padding: 0 7rem;
     .메인-인덱스{
         color: white;
@@ -123,12 +140,12 @@
         h2{
             font-size: 21px;
             width: 600px;
-            margin: 1.5rem 0;
+            margin: 3rem 0;
         }
         .메인-체크{
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 15px;
             p{
                 display: flex;
                 justify-content: flex-start;
@@ -139,6 +156,39 @@
                     stroke: #e52662;
                     width: 20px;
                     height: 20px;
+                }
+            }
+        }
+        button{
+            margin: 5rem 0;
+            position: relative;
+            border: none;
+            border-radius: 50px;
+            padding: 18px 80px;
+            font-size: 21px;
+            background: linear-gradient(90deg, rgb(55,250,195), rgb(62 236 117));
+            cursor: pointer;
+            transition: all .3s;
+            svg{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 40px;
+                height: 40px;
+                stroke-width: 2px;
+                stroke: white;
+                opacity: 0;
+                transition: all .3s;
+                scale: 0.05;
+            }
+            &:hover{
+                scale: 1.02;
+                color: #00000000;
+                svg{
+                    scale: 1;
+                    opacity: 1;
+                    transform: translate(-50%, -50%);
                 }
             }
         }
