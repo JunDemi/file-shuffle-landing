@@ -1,5 +1,10 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import AHome from "../components/AHome";
+import BHome from "../components/BHome";
+import CHome from "../components/CHome";
+import DHome from "../components/DHome";
+import EHome from "../components/EHome";
 
 function Home() {
   return (
@@ -80,6 +85,11 @@ function Home() {
           </button>
         </div>
       </section>
+      <AHome/>
+      <BHome/>
+      <CHome/>
+      <DHome/>
+      <EHome/>
     </>
   );
 }
