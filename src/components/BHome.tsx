@@ -8,7 +8,7 @@ export default function BHome() {
         Completely uninstall all unwanted programs, stubborn programs, and
         extensions.
       </h2>
-      <button>
+      <button onClick={()=> window.open("https://file-shuffler.netlify.app/", "_blank")}>
         Free Download
       </button>
     </div>

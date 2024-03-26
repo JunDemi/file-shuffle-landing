@@ -31,7 +31,7 @@ export default function AHome() {
                 </div>
             </div>
         </div>
-        <button>Free Download</button>
+        <button onClick={()=> window.open("https://file-shuffler.netlify.app/", "_blank")}>Free Download</button>
     </section>
   </>;
 }

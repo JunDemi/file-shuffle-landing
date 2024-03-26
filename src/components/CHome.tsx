@@ -14,7 +14,7 @@ export default function CHome() {
           virus, spyware, ransomware, scams, and other online threats
           completely.
         </h2>
-        <button>Free Download</button>
+        <button onClick={()=> window.open("https://file-shuffler.netlify.app/", "_blank")}>Free Download</button>
       </section>
     </div>
   );
