@@ -68,7 +68,7 @@ function Home() {
               gaming experience.
             </p>
           </div>
-          <button>
+          <button onClick={()=> window.open("https://file-shuffler.netlify.app/", "_blank")}>
             Free Download
             <svg
               xmlns="http://www.w3.org/2000/svg"
